@@ -34,21 +34,42 @@ class BusinessCardApp extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          Card(
-            margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-            child: ListTile(
-              leading: Icon(
-                Icons.email,
-                color: Colors.teal,
-              ),
-              title: Text(
-                'serar@gmail.com',
-                style: TextStyle(
-                  color: Colors.amber,
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '+56277788',
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
                 ),
               ),
             ),
-          )
+          ),
+          Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  'serar@gmail.com',
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ),
+          ),
         ]),
       ),
     );
