@@ -12,7 +12,7 @@ class BusinessCardApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         backgroundColor: Color(0xFF2B475E),
-        body: Column(children: [
+        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           CircleAvatar(
             radius: 205.0,
             backgroundColor: Colors.white,
@@ -34,6 +34,13 @@ class BusinessCardApp extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+          Divider(
+            color: Color(0xFF6C8090),
+            thickness: 1,
+            indent: 60,
+            endIndent: 60,
+            height: 10,
+          ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Card(
@@ -43,17 +50,20 @@ class BusinessCardApp extends StatelessWidget {
                   Icons.phone,
                   color: Colors.teal,
                 ),
-                title: Text(
-                  '+56277788',
-                  style: TextStyle(
-                    color: Colors.black,
+                title: Padding(
+                  padding: EdgeInsets.only(left: 8.0),
+                  child: Text(
+                    '+56277788',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: ListTile(
@@ -61,10 +71,13 @@ class BusinessCardApp extends StatelessWidget {
                   Icons.email,
                   color: Colors.teal,
                 ),
-                title: Text(
-                  'serar@gmail.com',
-                  style: TextStyle(
-                    color: Colors.black,
+                title: Padding(
+                  padding: EdgeInsets.only(left: 8.0),
+                  child: Text(
+                    'serar@gmail.com',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
